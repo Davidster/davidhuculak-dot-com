@@ -3,6 +3,54 @@
     <groupId>com.davidhuculak.web</groupId>
     <artifactId>my-website</artifactId>
     <version>1.0.0</version>
+    <packaging>war</packaging>
+
+    <build>
+        <finalName>mywebsite</finalName>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.6.0</version>
+                    <configuration>
+                        <!-- put your configurations here -->
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.tomcat.maven</groupId>
+                    <artifactId>tomcat7-maven-plugin</artifactId>
+                    <version>2.2</version>
+                </plugin>
+
+
+                <plugin>
+                    <groupId>com.cj.jshintmojo</groupId>
+                    <artifactId>jshint-maven-plugin</artifactId>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>lint</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                    <configuration>
+                        <version>2.4.3</version>
+                        <globals>$</globals>
+                        <directories>
+                            <directory>src/main/webapp/js</directory>
+                        </directories>
+                        <!--<excludes>-->
+                            <!--<exclude>src/main/webapp/hackyScript.js</exclude>-->
+                        <!--</excludes>-->
+                        <failOnError>true</failOnError>
+                    </configuration>
+                </plugin>
+
+            </plugins>
+        </pluginManagement>
+    </build>
 
     <dependencies>
 
