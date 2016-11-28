@@ -7,49 +7,43 @@
 
     <build>
         <finalName>mywebsite</finalName>
-        <pluginManagement>
-            <plugins>
+        <plugins>
 
-                <!-- Java compiler -->
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.6.0</version>
-                </plugin>
+            <!-- Java compiler -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.6.0</version>
+            </plugin>
 
-                <!-- Javascript linter -->
-                <plugin>
-                    <groupId>com.cj.jshintmojo</groupId>
-                    <artifactId>jshint-maven-plugin</artifactId>
-                    <version>1.6.0</version>
-                    <executions>
-                        <execution>
-                            <goals>
-                                <goal>lint</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                    <configuration>
-                        <directories>
-                            <directory>src/main/webapp/js</directory>
-                        </directories>
-                        <!--<excludes>-->
-                            <!--<exclude>src/main/webapp/js/bootstrap.min.js</exclude>-->
-                            <!--<exclude>src/main/webapp/js/npm.js</exclude>-->
-                        <!--</excludes>-->
-                        <failOnError>true</failOnError>
-                    </configuration>
-                </plugin>
+            <!-- Tomcat packager -->
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.2</version>
+            </plugin>
 
-                <!-- Tomcat packager -->
-                <plugin>
-                    <groupId>org.apache.tomcat.maven</groupId>
-                    <artifactId>tomcat7-maven-plugin</artifactId>
-                    <version>2.2</version>
-                </plugin>
+            <!-- Javascript linter -->
+            <plugin>
+                <groupId>com.cj.jshintmojo</groupId>
+                <artifactId>jshint-maven-plugin</artifactId>
+                <version>1.6.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>lint</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <directories>
+                        <directory>src/main/webapp/js</directory>
+                    </directories>
+                    <failOnError>true</failOnError>
+                </configuration>
+            </plugin>
 
-            </plugins>
-        </pluginManagement>
+        </plugins>
     </build>
 
     <dependencies>
