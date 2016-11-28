@@ -15,7 +15,6 @@ public class PrettyGoodServlet extends HttpServlet {
                       HttpServletResponse response)
             throws ServletException, IOException
     {
-        // Set response content type
         response.setContentType("text/html");
 
         String message = "What's good?";
@@ -26,7 +25,6 @@ public class PrettyGoodServlet extends HttpServlet {
             e.printStackTrace();
         }
 
-        // Actual logic goes here.
         PrintWriter out = response.getWriter();
         out.println(message);
     }
