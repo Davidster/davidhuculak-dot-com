@@ -9,7 +9,7 @@ $( document ).ready(function() {
 
     function reqListener () {
         console.log(this.responseText);
-        $("#your-gay").append(this.responseText);
+        $("#response-container").append(this.responseText);
         printingDots = false;
     }
 
@@ -25,7 +25,7 @@ $( document ).ready(function() {
 function printDots(){
     setTimeout(function(){
         if(printingDots){
-            $("#your-gay").append(". ");
+            $("#response-container").append(". ");
             printDots();
         }
     }, 1000);

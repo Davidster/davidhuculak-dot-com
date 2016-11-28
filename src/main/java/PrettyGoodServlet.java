@@ -5,16 +5,23 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import org.apache.log4j.Logger;
+
 /**
  * Created by David Huculak on 2016-11-28.
  */
 
 public class PrettyGoodServlet extends HttpServlet {
 
+    private static Logger logger = Logger.getLogger("PrettyGoodServlet");
+
     public void doGet(HttpServletRequest request,
                       HttpServletResponse response)
             throws ServletException, IOException
     {
+
+        logger.info("INCOMING GET REQUEST:");
+
         response.setContentType("text/html");
 
         String message = "What's good?";
@@ -24,6 +31,8 @@ public class PrettyGoodServlet extends HttpServlet {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
+        logger.info("Responding with message: " + message);
 
         PrintWriter out = response.getWriter();
         out.println(message);
