@@ -5,8 +5,7 @@ body {
 }
 
 #response-container {
-    font-size: 20px;
-    font-weight: bold;
+
 }
 
 #page-content {
@@ -16,6 +15,9 @@ body {
     top: 0px;
     right: 0px;
     bottom: 0px;
+
+    font-size: 20px;
+    font-weight: bold;
 
     z-index: 1;
 
