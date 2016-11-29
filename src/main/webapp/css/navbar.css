@@ -37,6 +37,8 @@
     border-radius: 125px;
     border: 1px solid black;
 
+    cursor: pointer;
+
 }
 
 .project-list {
@@ -51,12 +53,13 @@
     margin-left: 24px;
     margin-bottom: 8px;
 
+    cursor: pointer;
+
 }
 
 .label:hover {
 
     color: #65B1FF;
-    cursor: pointer;
 
 }
 
