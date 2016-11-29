@@ -1,3 +1,5 @@
 # My Website
 
-Perhaps this repo will hold the contents of my own personal website!
+This repo holds the source for my own personal website!
+
+You can view the page here: http://138.197.6.26:8080/mywebsite/

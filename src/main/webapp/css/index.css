@@ -1,4 +1,33 @@
+body {
+
+    font-family: "Roboto", sans-serif;
+
+}
+
 #response-container {
     font-size: 20px;
     font-weight: bold;
+}
+
+#page-content {
+
+    position: absolute;
+    left: 250px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+
+    z-index: 1;
+
+}
+
+#hey-thats-pretty-good {
+
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+
+    text-align: center;
+
 }

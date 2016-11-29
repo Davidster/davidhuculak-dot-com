@@ -24,10 +24,10 @@ public class PrettyGoodServlet extends HttpServlet {
 
         response.setContentType("text/html");
 
-        String message = "What's good?";
+        String message = "What is good?";
 
         try {
-            Thread.sleep(5000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

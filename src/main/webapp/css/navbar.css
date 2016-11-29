@@ -1,0 +1,75 @@
+.nav-bar {
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 250px;
+
+    background-color: #004080;
+
+    z-index: 0;
+
+}
+
+#nav-header {
+
+    background-color: #0058B2;
+    padding-bottom: 4px;
+
+    -webkit-box-shadow: 0 4px 12px -2px #0058B2;
+    -moz-box-shadow: 0 4px 12px -2px #0058B2;
+    box-shadow: 0 4px 12px -2px #0058B2;
+
+}
+
+#nav-content {
+
+    margin-top: 12px;
+
+}
+
+#personal-image {
+
+    margin: 16px 40px;
+    width: 170px;
+    height: 170px;
+    border-radius: 125px;
+    border: 1px solid black;
+
+}
+
+.project-list {
+
+
+}
+
+.label {
+
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-left: 24px;
+    margin-bottom: 8px;
+
+}
+
+.label:hover {
+
+    color: #65B1FF;
+    cursor: pointer;
+
+}
+
+.label.resume {
+
+    font-size: 24px;
+    margin-right: 24px;
+    text-align: center;
+
+}
+
+.label.resume i {
+
+    margin-right: 6px;
+
+}
