@@ -30,29 +30,31 @@
     <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="js/main.js"></script>
     <script src="js/navigation.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
     <!-- Navigation bar popping out of left of screen -->
     <div class="nav-bar">
         <div id="nav-header">
+            <div><i class="fa fa-user-circle" style=""></i></div>
             <img id="personal-image" src="images/david-face-small.png" title="Click to view my Google+ profile"/>
-            <div class="resume label"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Resume</div>
+            <div class="resume label clickable" page="resume"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Resume</div>
         </div>
         <div id="nav-content">
-            <div class="project-list">
-                <div class="smsReplier label">Sms Replier</div>
-                <div class="ant label">Ant Colony Optmization</div>
-                <div class="celluscope label">Celluscope</div>
-                <div class="myostro label">Myostro</div>
+            <div class="projects label">Projects</div>
+            <div class="projects-list">
+                <div class="smsReplier label clickable" page="sms-replier">Sms Replier</div>
+                <div class="ant label clickable" page="ant-colony-optimization">Ant Colony Optmization</div>
+                <div class="celluscope label clickable" page="celluscope">Celluscope</div>
+                <div class="myostro label clickable" page="myostro">Myostro</div>
             </div>
         </div>
     </div>
 
     <!-- Content of website - filled by selecting nav items -->
     <div id="page-content">
-        <div id="hey-thats-pretty-good">
+        <div class="hey-thats-pretty-good">
             Hey! That's pretty good!
             <br/>
             <div id="response-container"></div>
