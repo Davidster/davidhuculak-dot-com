@@ -19,17 +19,37 @@ body {
     font-size: 20px;
     font-weight: bold;
 
+    overflow: hidden;
+
     z-index: 1;
 
 }
 
-.hey-thats-pretty-good {
+.page-title {
 
-    height: 500px;
-    width: 500px;
-    margin: auto;
-    margin-top: 100px;
-
+    margin: 12px;
     text-align: center;
+
+}
+
+.pdfobject-container {
+
+    height: calc(100% - 48px);
+
+}
+
+#content-loading {
+
+    width: 60px;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+#content-loading > i {
+
+    font-size: 60px;
 
 }

@@ -3,8 +3,4 @@
  */
 $( document ).ready(function() {
 
-    console.log("calling api");
-
-    onLoadHome();
-
 });

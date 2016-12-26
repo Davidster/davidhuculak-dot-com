@@ -2,6 +2,8 @@ var printingDots = true;
 
 $( document ).ready(function() {
 
+    setPage("home");
+
     $(".clickable").on("click", function() {
         var page = $(this).attr("page");
         setPage(page);
@@ -19,34 +21,37 @@ $( document ).ready(function() {
             if (this.readyState!==4) return;
             if (this.status!==200) return; // or whatever error handling you want
             $("#page-content").html(this.responseText);
-            onLoadCallback(page);
+
+            switch(page){
+                case "home":
+                    onLoadHome();
+                    break;
+                case "sms-replier":
+                    onLoadSmsReplier();
+                    break;
+                case "ant-colony-optimization":
+                    onLoadACO();
+                    break;
+                case "celluscope":
+                    onLoadCelluscope();
+                    break;
+                case "myostro":
+                    onLoadMyostro();
+                    break;
+            }
         };
         xhr.send();
     }
-
-    function onLoadCallback(page) {
-        switch(page){
-            case "home":
-                onLoadHome();
-                break;
-            case "sms-replier":
-                onLoadSmsReplier();
-                break;
-            case "ant-colony-optimization":
-                onLoadACO();
-                break;
-            case "celluscope":
-                onLoadCelluscope();
-                break;
-            case "myostro":
-                onLoadMyostro();
-                break;
-            case "resume":
-                onLoadResume();
-                break;
-        }
-    }
 });
+
+function printDots(){
+    setTimeout(function(){
+        if(printingDots){
+            $("#response-container").append(". ");
+            printDots();
+        }
+    }, 1000);
+}
 
 function onLoadHome() {
 
@@ -66,15 +71,6 @@ function onLoadHome() {
 
 }
 
-function printDots(){
-    setTimeout(function(){
-        if(printingDots){
-            $("#response-container").append(". ");
-            printDots();
-        }
-    }, 1000);
-}
-
 function onLoadSmsReplier() {
     console.log("onLoadSmsReplier");
 }
@@ -89,8 +85,4 @@ function onLoadCelluscope() {
 
 function onLoadMyostro() {
     console.log("onLoadMyostro");
-}
-
-function onLoadResume() {
-    console.log("onLoadResume");
 }
