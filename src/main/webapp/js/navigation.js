@@ -63,7 +63,7 @@ function onLoadHome() {
         $("#response-container").append(this.responseText);
         printingDots = false;
     });
-    oReq.open("GET", "http://138.197.6.26:8080/mywebsite/api");
+    oReq.open("GET", "http://davidhuculak.me/api");
     oReq.send();
 
     printingDots = true;
