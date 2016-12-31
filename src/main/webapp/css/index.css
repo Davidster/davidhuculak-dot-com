@@ -27,14 +27,28 @@ body {
 
 .page-title {
 
-    margin: 12px;
+    background-color: #0058b2;
+    color: #FFFFFF;
+
+    letter-spacing: 0.8px;
+
+    height: 24px;
+    padding: 12px;
     text-align: center;
+
+}
+
+.page-body {
+
+    border-left: 3px solid #333333;
+    border-top: 3px solid #333333;
+    height: calc(100% - 48px);
 
 }
 
 .pdfobject-container {
 
-    height: calc(100% - 48px);
+    height: 100%;
 
 }
 

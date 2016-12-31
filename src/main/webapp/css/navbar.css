@@ -83,7 +83,6 @@
 .label.clickable:hover {
 
     color: #65B1FF;
-    /*background-color: rgba(200,200,200,0.1);*/
 
 }
 
@@ -91,7 +90,7 @@
 .label.projects {
 
     font-size: 20px;
-    margin-top: 50px;
+    margin-top: 65px;
     padding-left: 8px;
     margin-left: 16px;
 
