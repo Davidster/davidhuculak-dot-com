@@ -43,9 +43,18 @@ body {
     border-left: 3px solid #333333;
     border-top: 3px solid #333333;
     height: calc(100% - 48px);
-    text-align: center;
+    /* text-align: center; */
     font-weight: normal;
 	overflow-y: auto;
+
+}
+
+.home-page-body {
+
+	padding: 0px 24px;
+	font-size: 32px;
+	color: rgb(0, 64, 128);
+	text-align: inherit;
 
 }
 

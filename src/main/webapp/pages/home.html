@@ -1,24 +1,9 @@
-<div class="page-title" style="height: 100px; font-size: 16px;">
-    Hello, I'm David and this is my personal website.<br/>
-    Here, you can read a bit about me and the projects I've worked on in my many years of programming experience.<br/>
-    If you'd like to contact me, feel free to send me an email.<br/>
-    (This site is still in development!)
+<div class="page-title">
+    Welcome!
 </div>
-<div class="page-body" style="overflow-y: hidden; height: calc(100% - 124px);">
-    <div id="my-pdf" class=" pdfobject-container">
-        <div id="content-loading"><i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i></div>
-    </div>
+<div class="page-body home-page-body">
+    <p>Hello, I'm David and this is my personal website.<p/>
+    <p>Here, you can read a bit about me and the projects I've worked on.<p/>
+    <p>If you'd like to contact me, feel free to send me an email (see resume).<p/>
+	<p>(This site is still in development!)<p/>
 </div>
-<script>
-
-    var resume = PDFObject.embed("pdf/davidhuculakcv.pdf", "#my-pdf");
-
-    $("#content-loading").css("display", "none");
-
-    if(resume){
-        console.log("Successfully embedded resume pdf");
-    } else {
-        console.log("Failed to embed resume pdf");
-    }
-
-</script>

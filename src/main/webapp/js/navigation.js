@@ -38,6 +38,9 @@ $( document ).ready(function() {
                 case "myostro":
                     onLoadMyostro();
                     break;
+		case "resume":
+                    onLoadResume();
+                    break;
             }
         };
         xhr.send();
@@ -85,4 +88,7 @@ function onLoadCelluscope() {
 
 function onLoadMyostro() {
     console.log("onLoadMyostro");
+}
+function onLoadResume() {
+    console.log("onLoadResume");
 }

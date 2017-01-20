@@ -1,0 +1,21 @@
+<div class="page-title">
+    Resume
+</div>
+<div class="page-body" style="overflow-y: hidden;">
+    <div id="my-pdf" class=" pdfobject-container">
+        <div id="content-loading"><i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i></div>
+    </div>
+</div>
+<script>
+
+    var resume = PDFObject.embed("pdf/davidhuculakcv.pdf", "#my-pdf");
+
+    $("#content-loading").css("display", "none");
+
+    if(resume){
+        console.log("Successfully embedded resume pdf");
+    } else {
+        console.log("Failed to embed resume pdf");
+    }
+
+</script>
