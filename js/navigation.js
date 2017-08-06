@@ -47,31 +47,8 @@ $( document ).ready(function() {
     }
 });
 
-function printDots(){
-    setTimeout(function(){
-        if(printingDots){
-            $("#response-container").append(". ");
-            printDots();
-        }
-    }, 1000);
-}
-
 function onLoadHome() {
-
     console.log("onLoadHome");
-
-    var oReq = new XMLHttpRequest();
-    oReq.addEventListener("load", function(){
-        console.log(this.responseText);
-        $("#response-container").append(this.responseText);
-        printingDots = false;
-    });
-    oReq.open("GET", "http://davidhuculak.me/api");
-    oReq.send();
-
-    printingDots = true;
-    printDots();
-
 }
 
 function onLoadSmsReplier() {
