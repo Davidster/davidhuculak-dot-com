@@ -21,51 +21,7 @@ $( document ).ready(function() {
             if (this.readyState!==4) return;
             if (this.status!==200) return; // or whatever error handling you want
             $("#page-content").html(this.responseText);
-
-            switch(page){
-                case "home":
-                    onLoadHome();
-                    break;
-                case "sms-replier":
-                    onLoadSmsReplier();
-                    break;
-                case "ant-colony-optimization":
-                    onLoadACO();
-                    break;
-                case "celluscope":
-                    onLoadCelluscope();
-                    break;
-                case "myostro":
-                    onLoadMyostro();
-                    break;
-		case "resume":
-                    onLoadResume();
-                    break;
-            }
         };
         xhr.send();
     }
 });
-
-function onLoadHome() {
-    console.log("onLoadHome");
-}
-
-function onLoadSmsReplier() {
-    console.log("onLoadSmsReplier");
-}
-
-function onLoadACO() {
-    console.log("onLoadACO");
-}
-
-function onLoadCelluscope() {
-    console.log("onLoadCelluscope");
-}
-
-function onLoadMyostro() {
-    console.log("onLoadMyostro");
-}
-function onLoadResume() {
-    console.log("onLoadResume");
-}

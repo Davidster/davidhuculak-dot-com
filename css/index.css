@@ -40,6 +40,7 @@ body {
 
 .page-body {
 
+    padding: 0px 24px;
     border-left: 3px solid #333333;
     border-top: 3px solid #333333;
     height: calc(100% - 48px);
@@ -47,18 +48,15 @@ body {
     font-weight: normal;
 	overflow-y: auto;
 
-}
-
-.home-page-body {
-
-	padding: 0px 24px;
-	font-size: 32px;
-	color: rgb(0, 64, 128);
-	text-align: inherit;
+    background-color: #CFEBFD;
 
 }
 
-.page-body h2 {
+.page-body.no-pad {
+    padding: 0px;
+}
+
+.page-body h2, .page-body h3 {
 
 	font-weight: bold;
 	color: #004080;
@@ -78,6 +76,11 @@ body {
 
     height: 100%;
 
+}
+
+.skillList {
+    display: inline-block;
+    width: 45%;
 }
 
 #content-loading {
