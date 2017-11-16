@@ -1,18 +1,17 @@
 <div class="page-title">
     ConU Course Planner
 </div>
-<!--<div class="page-body"><p>Nothing to show here (yet)</p></div>-->
 <div class="page-body">
     <h2>Description</h2>
-    <p>
+    <p class="indented">
         ConU CoursePlanner is a project that was birthed at <a href="https://conuhacks.io/" target="_blank">ConUHacks II</a> with three of my close friends and is currently still in development. It is a website which stems from the fact that there is no easy way for a student at Concordia University (my school) to come up with a long-term plan defining each course they plan on taking in each season of each year, from the start of their degree to the end. The reason this is so hard to do is that the information regarding which courses must be taken to complete a given program (and their recommended order) along with the information about the courses themselves (pre-requisites, co-requisites, other requirements) is spread out across many web pages and/or documents on Concordia's website.
     </p>
-    <p>
+    <p class="indented">
         The site firstly allows the user to select their program of study. The page loads up a table which fills up with the sequence that we have stored for that program as per the university's recommendation page(s). The user can then drag courses between semesters and add/delete courses from the table via a auto-complete-enabled course search box. For any course available in our database, they can view its relevant information by clicking on it in the table or manually searching for it. The most important feature of the site is the sequence validation process. This will pass the user's proposed sequence to our backend server and check that all pre-requisite, co-requisite relationships are respected. This validation also checks the sequence for other issues such as duplicate courses, fulfilling of the minimum amount of credits for the program in question, and more. If the sequence contains issues, visual indicators are displayed on the page helping the user to correct them. Finally, the user is able to export their sequence to one of three formats: PDF, <a href="https://en.wikipedia.org/wiki/Markdown" target="_blank">Markdown</a>, or Plain Text.
     </p>
     <div class="separator"></div>
     <h2>Managing the Project</h2>
-    <p>
+    <p class="indented">
         This project is built using many different languages such as Java, Javascript, R and Bash along with the technologies listed below. With such a multitude of tools comes a somewhat involved project structure and also a barrier for entry for new contributors. In order to overcome such classic issues that come along with increasing a project's size, our team adheres to our own stripped down version of the <a href="http://www.agilemodeling.com/essays/introductionToAM.htm" target="_blank">Agile model</a>. We schedule stand-up meetings on a regular basis, perform issue tracking and code review, generate additional documentation to go along with our development process, and try to adhere to common code standards across the project.
     </p>
     <div class="separator"></div>
@@ -39,8 +38,8 @@
     </div>
     <div class="separator"></div>
     <h2>Additional Information</h2>
-    <p style="padding-bottom: 5px;">
-        Although the site is still in development, we are hosting our production build at <a href="http://conucourseplanner.online/" target="_blank">conucourseplanner.online</a>. We keep this build (frontend, backend and database) in sync with the master branch of our git repository.
+    <p class="indented" style="padding-bottom: 5px;">
+        Although the site is still in development, we are always hosting our latest version at <a href="http://conucourseplanner.online/" target="_blank">conucourseplanner.online</a>. We keep this build (frontend, backend and database) in sync with the master branch of our git repository.
         You can also check out the source code of the site on <a href="https://github.com/stumash/CoursePlanner" target="_blank">Github</a>.
     </p>
 </div>
