@@ -1,0 +1,86 @@
+Resources:
+  StaticClientBucket:
+    Type: AWS::S3::Bucket
+
+  StaticClientBucketAccessPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref StaticClientBucket
+      PolicyDocument:
+        Version: 2012-10-17
+        Id: PublicPolicy
+        Statement:
+          -
+            Sid: ListObjects
+            Action:
+              - s3:ListBucket
+            Effect: Allow
+            Principal:
+              CanonicalUser: !GetAtt CloudFrontS3AccessIdentity.S3CanonicalUserId
+            Resource: !GetAtt StaticClientBucket.Arn
+          -
+            Sid: ReadObjects
+            Action:
+              - s3:GetObject
+            Effect: Allow
+            Principal:
+              CanonicalUser: !GetAtt CloudFrontS3AccessIdentity.S3CanonicalUserId
+            Resource:
+              - !Sub [ "${StaticClientBucketArn}/*", { StaticClientBucketArn: !GetAtt StaticClientBucket.Arn } ]
+
+  CloudFrontS3AccessIdentity:
+    Type: AWS::CloudFront::CloudFrontOriginAccessIdentity
+    Properties:
+      CloudFrontOriginAccessIdentityConfig:
+        Comment: !Sub "Identity used by CloudFront to access the S3 bucket: ${StaticClientBucket}"
+
+  CloudFrontDistribution:
+    Type: AWS::CloudFront::Distribution
+    Properties:
+      DistributionConfig:
+        Enabled: true
+        DefaultRootObject: index.html
+        CustomErrorResponses:
+          -
+            ErrorCode: 404
+            ResponseCode: 404
+            ResponsePagePath: /error.html
+        Aliases:
+          - davidhuculak.com
+          - www.davidhuculak.com
+        Origins:
+          -
+            DomainName: !GetAtt StaticClientBucket.DomainName
+            Id: cloudFrontS3Origin
+            S3OriginConfig:
+              OriginAccessIdentity: !Sub origin-access-identity/cloudfront/${CloudFrontS3AccessIdentity}
+        ViewerCertificate:
+          AcmCertificateArn: "arn:aws:acm:us-east-1:171337445867:certificate/7c783797-086f-42cf-81a4-40d7c3268ce2"
+          SslSupportMethod: sni-only
+        DefaultCacheBehavior:
+          TargetOriginId: cloudFrontS3Origin
+          ViewerProtocolPolicy: allow-all
+          ForwardedValues:
+            QueryString: false
+            Cookies:
+              Forward: none
+
+  RootRecordSet:
+    Type: AWS::Route53::RecordSet
+    Properties:
+      Type: A
+      Name: davidhuculak.com
+      AliasTarget:
+        DNSName: !GetAtt CloudFrontDistribution.DomainName
+        HostedZoneId: Z2FDTNDATAQYW2
+      HostedZoneName: davidhuculak.com.
+      
+  WWWRecordSet:
+    Type: AWS::Route53::RecordSet
+    Properties:
+      Type: A
+      Name: www.davidhuculak.com
+      AliasTarget:
+        DNSName: !GetAtt CloudFrontDistribution.DomainName
+        HostedZoneId: Z2FDTNDATAQYW2
+      HostedZoneName: davidhuculak.com.
