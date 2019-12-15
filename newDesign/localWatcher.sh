@@ -13,9 +13,9 @@ SPHINX_IMAGE_HASH=$(docker build -f sphinx.Dockerfile -q .)
 SPHINX_CONTAINER_ID=$(
 docker run \
     -it -d --rm -v $WD:/home/python/docs $SPHINX_IMAGE_HASH \
-    sh -c "echo ./source/index.rst | entr sphinx-build -b html $SRC_DIR $BUILD_DIR"
+    sh -c "find ./source | entr sphinx-build -b html $SRC_DIR $BUILD_DIR"
 )
 
-reload -b -w $BUILD_DIR -d $BUILD_DIR -p $PORT
+{ docker logs -f $SPHINX_CONTAINER_ID & reload -b -w $BUILD_DIR -d $BUILD_DIR -p $PORT; }
 
 docker kill $SPHINX_CONTAINER_ID > /dev/null
