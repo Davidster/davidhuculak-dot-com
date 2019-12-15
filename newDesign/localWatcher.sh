@@ -2,6 +2,9 @@
 
 # Note: requires npm and npm package 'reload'
 # --> npm install -g reload
+# TODO: run reload inside of Docker.
+# Probably need to expose the 9856 for wss connection
+# (see https://github.com/alallier/reload/blob/master/lib/reload.js#L15)
 
 PORT="8081"
 SRC_DIR="source"
