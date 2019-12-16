@@ -12,5 +12,3 @@ RUN apk add entr
 USER python
 
 WORKDIR /home/python/docs
-
-# CMD []
