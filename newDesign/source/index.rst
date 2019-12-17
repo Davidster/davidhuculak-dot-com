@@ -9,14 +9,22 @@ Welcome to davidhuculak-dot-com's documentation!
 ================================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :caption: Me
+   :hidden:
 
+   me/me
+   me/resume
 
+.. toctree::
+   :caption: Work Experience
+   :hidden:
 
-Indices and tables
-==================
+   experience/nuance
+   experience/vehiclemind
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. toctree::
+   :caption: My Projects
+   :hidden:
+
+   projects/courseplanner
+   projects/setmylines
