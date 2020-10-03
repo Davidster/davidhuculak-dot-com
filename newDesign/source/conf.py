@@ -21,7 +21,7 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'davidhuculak-dot-com'
-copyright = '2019, David Huculak'
+copyright = '2020, David Huculak'
 author = 'David Huculak'
 
 # The short X.Y version
