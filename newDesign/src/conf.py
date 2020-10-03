@@ -25,7 +25,7 @@ copyright = '2020, David Huculak'
 author = 'David Huculak'
 
 # The short X.Y version
-version = '0.1'
+version = 'v0.1'
 # The full version, including alpha/beta/rc tags
 release = '0.1.0'
 
@@ -93,7 +93,7 @@ html_static_path = ['_static']
 html_logo = '_static/readAboutDavid.svg'
 html_theme_options = {
     'logo_only': True,
-    'display_version': False
+    'display_version': True
 }
 
 # Custom sidebar templates, must be a dictionary that maps document names
