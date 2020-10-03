@@ -1,5 +1,0 @@
-================
-VehicleMind Inc.
-================
-
-heyyyyyyyyyyyyy

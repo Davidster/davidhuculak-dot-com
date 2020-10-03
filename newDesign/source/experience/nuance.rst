@@ -1,5 +1,0 @@
-=====================
-Nuance Communications
-=====================
-
-heyyyyyyyyyyyyy

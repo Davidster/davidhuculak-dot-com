@@ -20,14 +20,14 @@ import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
-project = 'davidhuculak-dot-com'
+project = 'David Huculak\'s Personal Website'
 copyright = '2020, David Huculak'
 author = 'David Huculak'
 
 # The short X.Y version
-version = ''
+version = '0.1'
 # The full version, including alpha/beta/rc tags
-release = ''
+release = '0.1.0'
 
 
 # -- General configuration ---------------------------------------------------
@@ -136,20 +136,20 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
-latex_documents = [
-    (master_doc, 'davidhuculak-dot-com.tex', 'davidhuculak-dot-com Documentation',
-     'David Huculak', 'manual'),
-]
+# latex_documents = [
+#     (master_doc, 'davidhuculak-dot-com.tex', 'davidhuculak-dot-com Documentation',
+#      'David Huculak', 'manual'),
+# ]
 
 
 # -- Options for manual page output ------------------------------------------
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [
-    (master_doc, 'davidhuculak-dot-com', 'davidhuculak-dot-com Documentation',
-     [author], 1)
-]
+# man_pages = [
+#     (master_doc, 'davidhuculak-dot-com', 'davidhuculak-dot-com Documentation',
+#      [author], 1)
+# ]
 
 
 # -- Options for Texinfo output ----------------------------------------------
@@ -157,8 +157,8 @@ man_pages = [
 # Grouping the document tree into Texinfo files. List of tuples
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
-texinfo_documents = [
-    (master_doc, 'davidhuculak-dot-com', 'davidhuculak-dot-com Documentation',
-     author, 'davidhuculak-dot-com', 'One line description of project.',
-     'Miscellaneous'),
-]
+# texinfo_documents = [
+#     (master_doc, 'davidhuculak-dot-com', 'davidhuculak-dot-com Documentation',
+#      author, 'davidhuculak-dot-com', 'One line description of project.',
+#      'Miscellaneous'),
+# ]

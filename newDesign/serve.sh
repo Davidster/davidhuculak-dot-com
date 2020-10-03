@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 PORT="8081"
-SRC_DIR="source"
+SRC_DIR="src"
 BUILD_DIR="build"
 
 WD=$(pwd)
@@ -9,7 +9,6 @@ IMAGE_NAME="dhdotcom-build-env:latest"
 
 echo "Rebuilding docker image"
 # kill container if it's already running
-docker kill $(docker container ls -f "ancestor=$IMAGE_NAME" -q) > /dev/null 2>&1
 docker build --rm -q -f serve.Dockerfile . -t $IMAGE_NAME
 # clean up dangling image, which could happen when dockerfile changes
 docker rmi $(docker images -f "dangling=true" -q) > /dev/null 2>&1
@@ -29,7 +28,7 @@ CONTAINER_ID=$(
             -r \
             -d 0 \
             --force-poll 1000 \
-            -w ./source \
+            -w ./$SRC_DIR \
             "sphinx-build -b html $SRC_DIR $BUILD_DIR && reload -w $BUILD_DIR -d $BUILD_DIR -p $PORT"
 )
 docker logs -f $CONTAINER_ID
