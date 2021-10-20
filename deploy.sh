@@ -2,7 +2,7 @@
 
 S3_BUCKET_NAME="david-huculak-dot-com-staticclientbucket-1u9s1y54u0ymv"
 
-aws s3 sync ./ s3://$S3_BUCKET_NAME \
+aws s3 sync ./build/ s3://$S3_BUCKET_NAME \
   --delete \
   --exclude "*.html" \
   --exclude ".git/*" \
@@ -12,7 +12,7 @@ aws s3 sync ./ s3://$S3_BUCKET_NAME \
   --exclude "cloudformation.yaml"
 
 # include Cache-Control: no-cache for html files
-aws s3 cp ./ s3://$S3_BUCKET_NAME \
+aws s3 cp ./build/ s3://$S3_BUCKET_NAME \
   --recursive \
   --exclude "*" \
   --include "*.html" \
