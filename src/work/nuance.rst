@@ -1,4 +1,4 @@
-:github_url: https://github.com/Davidster/davidhuculak-dot-com/blob/master/src/experience/nuance.rst
+:github_url: https://github.com/Davidster/davidhuculak-dot-com/blob/master/src/work/nuance.rst
 
 .. image:: https://www.nuance.com/content/dam/nuance/shared-images/logos/nuance/logo-nuance-black-horizontal-small.png
 

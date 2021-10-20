@@ -1,4 +1,4 @@
-:github_url: https://github.com/Davidster/davidhuculak-dot-com/blob/master/src/experience/vehiclemind.rst
+:github_url: https://github.com/Davidster/davidhuculak-dot-com/blob/master/src/work/vehiclemind.rst
 
 .. image:: https://hub.vehiclemind.com/img/vm%205.png
 

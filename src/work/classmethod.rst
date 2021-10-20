@@ -1,4 +1,4 @@
-:github_url: https://github.com/Davidster/davidhuculak-dot-com/blob/master/src/experience/classmethod.rst
+:github_url: https://github.com/Davidster/davidhuculak-dot-com/blob/master/src/work/classmethod.rst
 
 .. image:: https://borderless-career.com/wp-content/uploads/2021/09/tate_color_black.png
 

@@ -1,4 +1,4 @@
-:github_url: https://github.com/Davidster/davidhuculak-dot-com/blob/master/src/experience/chkplz.rst
+:github_url: https://github.com/Davidster/davidhuculak-dot-com/blob/master/src/work/chkplz.rst
 
 .. image:: https://uploads-ssl.webflow.com/5f85eb6a4420cb5c13f58d83/616ee2afab58045eae35144f_CHK%20PLZ%20Refresh%20Horizontal%20(1).svg
 
