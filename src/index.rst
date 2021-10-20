@@ -53,4 +53,4 @@ I am also an associate-level `AWS Certified Developer <https://aws.amazon.com/ce
 Resume / Contact
 ----------------
 
-Feel free contact me by email (see `CV </_static/pdf/cv_oct_2021.pdf>`_)
+Feel free contact me by email (see `CV <_static/pdf/cv_oct_2021.pdf>`_)
