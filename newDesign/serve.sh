@@ -27,10 +27,14 @@ CONTAINER_ID=$(
         /root/.cargo/bin/watchexec \
             -r \
             -d 0 \
-            --force-poll 1000 \
             -w ./$SRC_DIR \
             "sphinx-build -b html $SRC_DIR $BUILD_DIR && reload -w $BUILD_DIR -d $BUILD_DIR -p $PORT"
 )
-docker logs -f $CONTAINER_ID
 
-docker kill $CONTAINER_ID > /dev/null
+function cleanup {
+  docker kill $CONTAINER_ID > /dev/null
+}
+
+trap cleanup EXIT
+
+docker logs -f $CONTAINER_ID

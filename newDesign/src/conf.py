@@ -20,14 +20,14 @@ import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
-project = 'David Huculak\'s Personal Website'
-copyright = '2020, David Huculak'
+project = 'David Huculak'
+copyright = '2021, David Huculak'
 author = 'David Huculak'
 
 # The short X.Y version
-version = 'v0.1'
+version = 'v2021.8.20'
 # The full version, including alpha/beta/rc tags
-release = '0.1.0'
+release = '2021.8.20'
 
 
 # -- General configuration ---------------------------------------------------
