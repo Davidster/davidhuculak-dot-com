@@ -13,5 +13,4 @@ or bar, saving you time and easing the load on the waitstaff. When I first joine
 company was small and the tech team was even smaller, making it the most intense
 and rewarding job I've had.
 
-In Q3 of 2021, CHK PLZ was acquired by `sunday <https://sundayapp.com/>`_, a young European company
-that shares our vision which is where I'm currently working.
+In Q3 of 2021, CHK PLZ was acquired by `sunday <https://sundayapp.com/>`_, a recently-founded French company.

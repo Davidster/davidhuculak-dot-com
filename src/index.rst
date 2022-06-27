@@ -25,23 +25,31 @@ Here, you can read a bit about me and my experience as a software developer.
 My Areas of Interest
 --------------------
 
-- Full-stack web development
-- Site reliability engineerig
 - Computer graphics
 - Game development
+- Systems programming / Rust
+- Site reliability engineering
+- Full-stack web development
+
+Projects
+--------
+
+See my `GitHub profile <https://github.com/Davidster>`_ and `CV <_static/pdf/cv_jun_2022.pdf>`_.
 
 Notable tools I've worked with
 ------------------------------
 
-- `Node.js <https://nodejs.org/en/about/>`_ (`Express <https://expressjs.com/>`_)
-- `React <https://reactjs.org>`_ (`Material-UI <https://material-ui.com/>`_)
-- `Ionic <https://ionicframework.com>`_
+- `WebGPU in Rust <https://github.com/gfx-rs/wgpu>`_
+- `Unity <https://unity.com/products/unity-platform>`_
+- `OpenGL <https://www.opengl.org>`_
+- `Unreal Engine 4 <https://www.unrealengine.com/>`_
 - `Docker <https://www.docker.com>`_
 - `AWS <https://aws.amazon.com>`_ (`Lambda <https://aws.amazon.com/lambda>`_, `DynamoDB <https://aws.amazon.com/dynamodb>`_, `IoT Core <https://aws.amazon.com/iot-core>`_, etc. )
 - `Firebase <https://firebase.google.com/>`_
-- `OpenGL <https://www.opengl.org>`_
-- `Unity <https://unity.com/products/unity-platform>`_
-- `Unreal Engine 4 <https://www.unrealengine.com/>`_
+- `OpenCV <https://opencv.org/>`_
+- `Node.js <https://nodejs.org/en/about/>`_ (`Express <https://expressjs.com/>`_)
+- `React <https://reactjs.org>`_ (`Material-UI <https://material-ui.com/>`_)
+- `Ionic <https://ionicframework.com>`_
 
 Education
 ---------
@@ -53,4 +61,4 @@ I am also an associate-level `AWS Certified Developer <https://aws.amazon.com/ce
 Resume / Contact
 ----------------
 
-Feel free contact me by email (see `CV <_static/pdf/cv_oct_2021.pdf>`_)
+Feel free contact me by email (see `CV <_static/pdf/cv_jun_2022.pdf>`_)
