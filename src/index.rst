@@ -62,3 +62,8 @@ Resume / Contact
 ----------------
 
 Feel free contact me by email (see `CV <_static/pdf/cv_jun_2022.pdf>`_)
+
+Stack Overflow
+______________
+
+https://stackoverflow.com/users/5700867/david-huculak
