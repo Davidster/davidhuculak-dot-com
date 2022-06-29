@@ -25,9 +25,9 @@ copyright = '2022, David Huculak'
 author = 'David Huculak'
 
 # The short X.Y version
-version = 'v2022.6.27'
+version = 'v2022.6.29'
 # The full version, including alpha/beta/rc tags
-release = '2022.6.27'
+release = '2022.6.29'
 
 
 # -- General configuration ---------------------------------------------------
