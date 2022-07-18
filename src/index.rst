@@ -9,61 +9,64 @@
    Classmethod <work/classmethod>
    Nuance <work/nuance>
 
-..
-  .. toctree::
-     :caption: Projects
-     :hidden:
-     projects/courseplanner
-     projects/setmylines
-
-
 Hello, I'm David
 ================
 
-Here, you can read a bit about me and my experience as a software developer.
+`Resume <_static/pdf/cv_jun_2022.pdf>`_
+_______________________________________
 
-My Areas of Interest
---------------------
+My technical interesets inculude computer graphics, game development, systems programming / Rust and site reliability engineering.
+I'm currently working on `wgpu-sandbox <https://github.com/Davidster/wgpu-sandbox>`_, game that I'm writing from scratch in Rust.
 
-- Computer graphics
-- Game development
-- Systems programming / Rust
-- Site reliability engineering
-- Full-stack web development
-
-Projects
---------
-
-See my `GitHub profile <https://github.com/Davidster>`_ and `CV <_static/pdf/cv_jun_2022.pdf>`_.
-
-Notable tools I've worked with
-------------------------------
-
-- `WebGPU in Rust <https://github.com/gfx-rs/wgpu>`_
-- `Unity <https://unity.com/products/unity-platform>`_
-- `OpenGL <https://www.opengl.org>`_
-- `Unreal Engine 4 <https://www.unrealengine.com/>`_
-- `Docker <https://www.docker.com>`_
-- `AWS <https://aws.amazon.com>`_ (`Lambda <https://aws.amazon.com/lambda>`_, `DynamoDB <https://aws.amazon.com/dynamodb>`_, `IoT Core <https://aws.amazon.com/iot-core>`_, etc. )
-- `Firebase <https://firebase.google.com/>`_
-- `OpenCV <https://opencv.org/>`_
-- `Node.js <https://nodejs.org/en/about/>`_ (`Express <https://expressjs.com/>`_)
-- `React <https://reactjs.org>`_ (`Material-UI <https://material-ui.com/>`_)
-- `Ionic <https://ionicframework.com>`_
+I am open to job opportunities in the gaming industry. Feel free to contact me by the email found in my resume or by LinkedIn.
 
 Education
----------
+_________
 
 Bachelor of Computer Science (BCompSc), graduated in June 2020 from Concordia University.
 
 I am also an associate-level `AWS Certified Developer <https://aws.amazon.com/certification/certified-developer-associate/>`_.
 
-Resume / Contact
-----------------
+Tools I have experience with
+____________________________
 
-Feel free contact me by email (see `CV <_static/pdf/cv_jun_2022.pdf>`_)
+- Libraries: `WebGPU in Rust <https://github.com/gfx-rs/wgpu>`_, `OpenGL <https://www.opengl.org>`_, `OpenCV <https://opencv.org/>`_
+- Engines: `Unity <https://unity.com/products/unity-platform>`_, `Unreal Engine 4 <https://www.unrealengine.com/>`_
 
-Stack Overflow
-______________
+Projects
+________
 
-https://stackoverflow.com/users/5700867/david-huculak
+`wgpu-sandbox <https://github.com/Davidster/wgpu-sandbox>`_
+-----------------------------------------------------------
+
+First-person shooter that I'm writing from scratch in Rust.
+
+.. image:: /_static/img/brainstem_pose.png
+
+`ShapeOfLightX <https://github.com/Davidster/ShapeOfLightX>`_
+-----------------------------------------------------------
+
+Helps map the positions of your christmas lights and provides a framework for programming 3D-aware animations that run on your tree.
+
+.. image:: /_static/img/tree_conv.png
+
+`Super Shopper CTR <https://ctrl-alt-defeat.gitlab.io/supershopperctr/>`_
+-----------------------------------------------------------
+
+Speed shopping game built with Unity for a class project with 5 other team members.
+
+.. image:: /_static/img/super_shopper.png
+
+`Blender Ramp Creator <https://www.youtube.com/watch?v=pPNOPcsROes>`_
+-----------------------------------------------------------
+
+Blender plugin for dynamically creating, shaping and resizing 3D models of skateboard ramps. `Repo url <https://github.com/Davidster/BlenderRampCreator>`_
+
+.. image:: /_static/img/ramp_creator.png
+
+Other links
+___________
+
+- Github: https://github.com/Davidster
+- Stackoverflow: https://stackoverflow.com/users/5700867/david-huculak
+- LinkedIn: https://www.linkedin.com/in/davidhuculak/
