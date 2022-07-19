@@ -16,7 +16,7 @@ Hello, I'm David
 _______________________________________
 
 My technical interests inculude computer graphics, game development, systems programming / Rust and site reliability engineering.
-I'm currently working on `wgpu-sandbox <https://github.com/Davidster/wgpu-sandbox>`_, game that I'm writing from scratch in Rust.
+I'm currently working on `wgpu-sandbox <https://github.com/Davidster/wgpu-sandbox>`_, a game that I'm writing from scratch in Rust.
 
 I am open to job opportunities in the gaming industry. Feel free to contact me by the email found in my resume or by LinkedIn.
 
