@@ -12,7 +12,7 @@ device that plugs into your car and offers some useful features and insights. Th
 includes tracking their their fuel level, battery, mileage and getting human-readable 
 descriptions about their engine diagnostic codes when the check engine light is visible.
 
-I joined Vehicle Mind when it was a young and small company when I first joined in 2018 so it had the usual traits like short deadlines,
+I joined Vehicle Mind when it was a young and small company so it had the usual traits like short deadlines,
 high-impact projects and each employee had a large amount of responsibility. Some of the features
 I worked on include:
 
