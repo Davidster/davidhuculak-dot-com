@@ -12,13 +12,13 @@
 Hello, I'm David
 ================
 
-`Resume <_static/pdf/cv_jun_2022.pdf>`_
-_______________________________________
+`Resume 📝 <_static/pdf/cv_jun_2022.pdf>`_
+__________________________________________
 
 My technical interests inculude computer graphics, game development, systems programming / Rust and site reliability engineering.
-I'm currently working on `wgpu-sandbox <https://github.com/Davidster/wgpu-sandbox>`_, a game that I'm writing from scratch in Rust.
+I'm currently working on `ikari <https://github.com/Davidster/ikari>`_, a game engine that I'm writing from scratch in Rust.
 
-I am open to job opportunities in the gaming industry. Feel free to contact me by the email found in my resume or by LinkedIn.
+I'm currently working as an engine programmer at Ubisoft Montreal.
 
 Education
 _________
@@ -36,29 +36,29 @@ ____________________________
 Projects
 ________
 
-`wgpu-sandbox <https://github.com/Davidster/wgpu-sandbox>`_
------------------------------------------------------------
+`ikari <https://github.com/Davidster/ikari>`_
+---------------------------------------------
 
-First-person shooter that I'm writing from scratch in Rust.
+Game engine that I'm writing from scratch in Rust in the hopes of using it to make a small first-person shooter.
 
 .. image:: /_static/img/brainstem_pose.png
 
 `ShapeOfLightX <https://github.com/Davidster/ShapeOfLightX>`_
------------------------------------------------------------
+-------------------------------------------------------------
 
 Helps map the positions of your christmas lights and provides a framework for programming 3D-aware animations that run on your tree.
 
 .. image:: /_static/img/tree_conv.png
 
 `Super Shopper CTR <https://ctrl-alt-defeat.gitlab.io/supershopperctr/>`_
------------------------------------------------------------
+--------------------------------------------------------------------------
 
 Speed shopping game built with Unity for a class project with 5 other team members.
 
 .. image:: /_static/img/super_shopper.png
 
 `Blender Ramp Creator <https://www.youtube.com/watch?v=pPNOPcsROes>`_
------------------------------------------------------------
+---------------------------------------------------------------------
 
 Blender plugin for dynamically creating, shaping and resizing 3D models of skateboard ramps. `Repo url <https://github.com/Davidster/BlenderRampCreator>`_
 
