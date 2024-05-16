@@ -12,7 +12,7 @@
 Hello, I'm David
 ================
 
-`Resume 📝 <_static/pdf/cv_may_2024.pdf>`_
+`Resume 📝 <_static/pdf/cv_may_2024_2.pdf>`_
 __________________________________________
 
 My technical interests inculude computer graphics, game development, systems programming / Rust and site reliability engineering.
