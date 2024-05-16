@@ -6,7 +6,7 @@ RUN apt-get install curl bash build-essential -y
 RUN curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | bash -s -- -y
 RUN $HOME/.cargo/bin/cargo install watchexec-cli
 
-RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_20.x | bash -
 RUN apt-get install nodejs -y
 RUN npm install -g reload
 

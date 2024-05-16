@@ -12,7 +12,7 @@
 Hello, I'm David
 ================
 
-`Resume 📝 <_static/pdf/cv_jun_2022.pdf>`_
+`Resume 📝 <_static/pdf/cv_may_2024.pdf>`_
 __________________________________________
 
 My technical interests inculude computer graphics, game development, systems programming / Rust and site reliability engineering.
@@ -42,6 +42,13 @@ ________
 Game engine that I'm writing from scratch in Rust in the hopes of using it to make a small first-person shooter.
 
 .. image:: /_static/img/brainstem_pose.png
+
+`Shell smash <https://davidhuculak.itch.io/shell-smash>`_
+--------------------------------------------------------------------------
+
+Cute crab-themed bullet hell / puzzle game built with the Rust Bevy Engine for a game jam with 3 friends.
+
+.. image:: /_static/img/shell_smash.png
 
 `ShapeOfLightX <https://github.com/Davidster/ShapeOfLightX>`_
 -------------------------------------------------------------
